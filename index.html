@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Australia's Net Overseas Migration</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="./barChart.js" ></script>
+    <script src="./chloreopath.js" ></script>
+    <script src="./lineChart.js" ></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Australia's Migration Trends</h1>
+    
+        <div class="section">
+          <h2>Introduction</h2>
+          <p>
+            Welcome to our website dedicated to exploring and understanding the migration trends in Australia. Migration plays a significant role in shaping the demographic landscape of the country. By analyzing data and visualizing it through various charts and maps, we can gain insights into the patterns, changes, and reasons behind these migrations.
+          </p>
+        </div>
+    
+        <div class="section">
+          <h2>Net Overseas Migration by State in 2021-22</h2>
+          <div class="chart-description">
+            <p>
+              The choropleth map provides a visual representation of net overseas migration (NOM) in different states and territories of Australia. The color intensity on the map indicates the migration level, with darker shades representing higher levels of migration. Let's explore the trends and historical context behind these migrations.
+            </p>
+            <h3>History and Trends</h3>
+            <p>
+              Sydney, being one of the most populous cities in Australia, has historically attracted a significant number of migrants. Its economic opportunities, cultural diversity, and vibrant lifestyle make it an attractive destination. On the other hand, Tasmania, with its smaller population and limited economic opportunities, has seen comparatively fewer migrations.
+            </p>
+          </div>
+          <div id="chloreopath"></div>
+        </div>
+    
+        <div class="section">
+          <h2>Top Countries of Origin in 2021-22</h2>
+          <div class="chart-description">
+            <p>
+              The bar chart displays the top countries of origin for migrants coming to Australia. By examining the data, we can understand the countries that contribute the most to Australia's migration and the reasons behind these trends.
+            </p>
+            <h3>History and Trends</h3>
+            <p>
+              China, Nepal, Philippines, Afghanistan, and India are among the top countries of origin for migrants to Australia. The migration patterns from these countries can be influenced by various factors, including economic opportunities, political stability, education prospects, and family reunification. Understanding these trends helps us gain insights into the diverse backgrounds and motivations of migrants coming to Australia.
+            </p>
+          </div>
+          <button class="button" id="sortButton" >Sort</button>
+          <div id="barChart"></div>
+        </div>
+    
+        <div class="section">
+          <h2>Total Number of Migrations (2004-2021)</h2>
+          <div class="chart-description">
+            <p>
+              The line chart showcases the total number of migrations over the years. By examining the data, we can identify long-term migration trends and understand the factors that have influenced migration levels in Australia.
+            </p>
+            <h3>History and Trends</h3>
+            <p>
+              The line chart illustrates the fluctuations in migration levels over the years. Notable trends include an increase in migration from 2004 to 2008, followed by a dip during the global financial crisis. Migration levels rebounded in subsequent years, with some variations. The COVID-19 pandemic in 2020 resulted in a sharp decline in migration, highlighting the influence of external factors on migration trends.
+            </p>
+          </div>
+          <div id="lineChart"></div>
+        </div>
+
+      <p>
+        COS30045 - Data Visualisation
+        Shah Nawaz Chowdhury 103830682
+      </p>
+    </div>
+
+    
+</body>
+</html>
